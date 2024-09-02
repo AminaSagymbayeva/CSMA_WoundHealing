@@ -16,12 +16,13 @@ CSMA is an ImageJ plugin for the analysis of wound healing (scratch) assays. CSM
 1.	Install [ImageJ software](https://imagej.net/downloads).
 2.	Install [Anaconda package](https://docs.anaconda.com/free/anaconda/install/index.html). **Please check ‘Add to system PATH’ option during installation.**
 3.	Run the CSMAenv_installer to create a virtual environment with all the necessary libraries. This prevents library version incompatibility and protects other projects should they have different library versions.
-4.	Download Canny_ScratchAnalysis-0.1.0-SNAPSHOT.jar file.
-5.	In the Plugins menu of ImageJ, select Install. Navigate to the folder with your jar file and select it. Canny Scratch Analysis plugin should appear in the menu.
+4.	From the target folder, download CSMA_WoundHealingTool-0.1.0.jar file.
+5.	In the Plugins menu of ImageJ, select Install.
+6.	Navigate to the folder with your jar file and select it. CSMA Wound Healing Tool should appear in the menu.
 
 
 ## Usage
-1.	Prepare your dataset. Ensure that the files are named in proper order (if your image is named ‘image2’, rename it to ‘image02’) and have the same format and dimensions. Save all images to a single directory. Please try to select quality images as it will make the detection much easier.
+1.	Prepare your dataset. **Ensure that the files are named in proper order (if your image is named ‘image2’, rename it to ‘image02’) and have the same format and dimensions.** Save all images to a single directory. Please try to select quality images as it will make the detection much easier.
 2.	To open the image stack, select File>>Import>>Image Sequence and choose your dataset directory.
 3.	When the image stack is loaded, select Canny Scratch Analysis from the Plugins menu.
 4.	Adjust parameters accordingly. We recommend using the default parameter values on the first try. In case you want to improve the quality of wound detection, the instructions for fine-tuning the parameters might be a useful guide.
@@ -38,7 +39,7 @@ If there are holes inside the detected cells try to increase the cell filling ra
 
 
 ## Contributing
-All interested parties are welcome to contribute to this project. The code was developed in both Python 3 and Java programming languages. Python 3 is used for image processing and the user interface (UI) development, whereas Java facilitates communication between ImageJ and Python. The algorithm was integrated as an ImageJ plugin to facilitate its spread among users accustomed to ImageJ.
+All interested parties are welcome to contribute to this project. The code was developed in both Python 3 and Java programming languages. Python 3 is used for image processing and user interface (UI) development, whereas Java facilitates communication between ImageJ and Python. The algorithm was integrated as an ImageJ plugin to facilitate its spread among users accustomed to ImageJ.
 
 ### Detailed Breakdown
 
