@@ -12,22 +12,22 @@
 		<relativePath />
 	</parent>
 
-	<groupId>com.mycompany</groupId>        <!-- FIXME: Your organization groupId here -->
-	<artifactId>Process_Pixels</artifactId> <!-- FIXME: Your project artifactId here   -->
-	<version>0.1.0-SNAPSHOT</version>
+	<groupId>kz.nu.edu.mechbiolab</groupId>        <!-- FIXME: Your organization groupId here -->
+	<artifactId>CSMA_WoundHealingTool</artifactId> <!-- FIXME: Your project artifactId here   -->
+	<version>0.1.0</version>
 
-	<name>Process Pixels</name>                                                   <!-- FIXME: Your project name here          -->
-	<description>A Maven project implementing an ImageJ 1.x plugin.</description> <!-- FIXME: Your project description here   -->
-	<url>https://mycompany.com/imagej/process-pixels/</url>                       <!-- FIXME: Your project website here       -->
-	<inceptionYear>2012</inceptionYear>                                           <!-- FIXME: Your project starting year here -->
+	<name>CSMA Wound Healing Tool</name>                                                   <!-- FIXME: Your project name here          -->
+	<description>CSMA is an ImageJ plugin for automated wound healing (scratch) assay analysis.</description> <!-- FIXME: Your project description here   -->
+	<url>https://github.com/AminaSagymbayeva/CSMA_WoundHealing.git/</url>                       <!-- FIXME: Your project website here       -->
+	<inceptionYear>2024</inceptionYear>                                           <!-- FIXME: Your project starting year here -->
 	<organization>
-		<name>My Company</name>           <!-- FIXME: Your organization name here    -->
-		<url>https://mycompany.com/</url> <!-- FIXME: Your organization website here -->
+		<name>Nazarbayev University Mechanobiology Laboratory</name>           <!-- FIXME: Your organization name here    -->
+		<url>https://www.researchgate.net/lab/Mechanobiology-Lab-Tri-Pham/</url> <!-- FIXME: Your organization website here -->
 	</organization>
 	<licenses>
 		<license>                         <!-- FIXME: Your license here -->
-			<name>CC0</name>
-			<url>https://creativecommons.org/publicdomain/zero/1.0/</url>
+			<name>MIT</name>
+			<url>https://opensource.org/license/mit/</url>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
@@ -35,9 +35,9 @@
 	<developers>
 		<!-- See https://imagej.net/contribute/governance#scijava-team-roles -->
 		<developer>
-			<id>octocat</id>                                          <!-- FIXME: Your GitHub handle here -->
-			<name>Noma Onomatopoeia</name>                            <!-- FIXME: Your name here          -->
-			<url>https://mycompany.com/people/noma-onomatopoeia</url> <!-- FIXME: Your website here       -->
+			<id>AminaSagymbayeva</id>                                          <!-- FIXME: Your GitHub handle here -->
+			<name>Amina Sagymbayeva</name>                            <!-- FIXME: Your name here          -->
+			<url>https://www.linkedin.com/in/aminasagymbay/</url> <!-- FIXME: Your website here       -->
 			<roles>
 				<role>founder</role>
 				<role>lead</role>
@@ -77,10 +77,10 @@
 	</ciManagement>
 
 	<properties>
-		<package-name>com.mycompany.imagej</package-name>                   <!-- FIXME: Your project package prefix here -->
-		<main-class>com.mycompany.imagej.Process_Pixels</main-class>        <!-- FIXME: Your project main class here, or delete for none -->
-		<license.licenseName>cc0</license.licenseName>                      <!-- FIXME: Your license-maven-plugin license code here -->
-		<license.copyrightOwners>My Company, Inc.</license.copyrightOwners> <!-- FIXME: Your organization legal entity name here -->
+		<package-name>kz.nu.edu.mechbiolab.imagej</package-name>                   <!-- FIXME: Your project package prefix here -->
+		<main-class>kz.nu.edu.mechbiolab.imagej.CSMA_plugin</main-class>        <!-- FIXME: Your project main class here, or delete for none -->
+		<license.licenseName>MIT</license.licenseName>                      <!-- FIXME: Your license-maven-plugin license code here -->
+		<license.copyrightOwners>Nazarbayev University</license.copyrightOwners> <!-- FIXME: Your organization legal entity name here -->
 	</properties>
 
 	<dependencies>

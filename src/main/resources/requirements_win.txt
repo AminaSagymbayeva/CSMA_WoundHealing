@@ -1,0 +1,36 @@
+contourpy @ file:///C:/b/abs_853rfy8zse/croot/contourpy_1700583617587/work
+customtkinter==5.2.1
+cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+darkdetect==0.8.0
+fonttools==4.25.0
+imageio==2.33.1
+importlib-resources @ file:///C:/b/abs_9d6rmtszbl/croot/importlib_resources_1698254653090/work
+kiwisolver @ file:///C:/b/abs_88mdhvtahm/croot/kiwisolver_1672387921783/work
+matplotlib @ file:///C:/b/abs_49b2acwxd4/croot/matplotlib-suite_1679593486357/work
+mkl-fft @ file:///C:/b/abs_19i1y8ykas/croot/mkl_fft_1695058226480/work
+mkl-random @ file:///C:/b/abs_edwkj1_o69/croot/mkl_random_1695059866750/work
+mkl-service==2.4.0
+munkres==1.1.4
+networkx==3.2.1
+numpy @ file:///C:/b/abs_7267ja_mqz/croot/numpy_and_numpy_base_1701295083047/work/dist/numpy-1.26.2-cp39-cp39-win_amd64.whl#sha256=c94e29c6f2a3619c8963604ceb430546999717df54be5c5be77380b3dfaf681d
+opencv-contrib-python==4.6.0.66
+opencv-python==4.7.0.72
+opencv-python-headless==4.8.0.74
+packaging @ file:///C:/b/abs_28t5mcoltc/croot/packaging_1693575224052/work
+Pillow==10.1.0
+ply==3.11
+pyparsing @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_7f_7lba6rl/croots/recipe/pyparsing_1661452540662/work
+PyQt5==5.15.10
+PyQt5-sip @ file:///C:/b/abs_c0pi2mimq3/croot/pyqt-split_1698769125270/work/pyqt_sip
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+PyWavelets==1.5.0
+scikit-image==0.19.3
+scipy==1.11.4
+sip @ file:///C:/b/abs_edevan3fce/croot/sip_1698675983372/work
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+tifffile==2023.12.9
+tomli @ file:///C:/Windows/TEMP/abs_ac109f85-a7b3-4b4d-bcfd-52622eceddf0hy332ojo/croots/recipe/tomli_1657175513137/work
+tornado @ file:///C:/b/abs_0cbrstidzg/croot/tornado_1696937003724/work
+zipp @ file:///C:/b/abs_b9jfdr908q/croot/zipp_1672387552360/work
+
+
