@@ -12,7 +12,7 @@
 		<relativePath />
 	</parent>
 
-	<groupId>kz.nu.edu.mechbiolab</groupId>        <!-- FIXME: Your organization groupId here -->
+	<groupId>kz.nu.edu.mechbiolab</groupId>        <!-- FIXME: Your organization groupId here. -->
 	<artifactId>CSMA_WoundHealingTool</artifactId> <!-- FIXME: Your project artifactId here   -->
 	<version>0.1.0</version>
 

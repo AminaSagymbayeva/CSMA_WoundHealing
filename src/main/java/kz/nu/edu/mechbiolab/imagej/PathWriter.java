@@ -15,7 +15,7 @@ public class PathWriter {
 		String directoryPath = null;
         File tempFile = null;
 		try {		
-			
+			//writes the path to all images to a temporary file
 			int[] windowList = WindowManager.getIDList();
 		    if (windowList == null || windowList.length == 0) {
 		        throw new NullPointerException("NoImagesOpen");

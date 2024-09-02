@@ -1,4 +1,4 @@
-name: ImageJCannyScratch
+name: ImageJCSMA
 channels:
   - defaults
   - PyPI
