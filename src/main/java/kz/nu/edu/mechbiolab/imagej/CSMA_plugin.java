@@ -44,7 +44,7 @@ public class CSMA_plugin implements PlugIn{
 	            }
 	            	File[] pngFiles = latestSubfolder.listFiles((dir, name) -> name.toLowerCase().endsWith(".png"));
 	            	Arrays.sort(pngFiles, Comparator.comparingLong(File::lastModified));
-	                // Create an ImageStack to hold the images
+	                // Create an ImageStack to hold the images.
 	                ImageStack stack = new ImageStack();
 	                // Use ImageJ's Opener to open each image in the sequence.
 	                Opener opener = new Opener();

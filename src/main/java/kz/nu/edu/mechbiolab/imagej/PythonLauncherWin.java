@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 import ij.gui.GenericDialog;
 
 public class PythonLauncherWin {
-	//executes the python script
+	//executes the python script.
 	public File createTempFile(String resourceFile, String name, String fileFormat) throws InterruptedException, IOException, NullPointerException{
         File tempFile = null;
         InputStream input = getClass().getResourceAsStream(resourceFile);

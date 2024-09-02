@@ -14,7 +14,7 @@ from glob import glob
 script_dir = path.dirname(path.realpath(__file__))
 file_path = glob(path.join(script_dir, '*canny_temp_imglist*.txt'))[-1].replace('\\', '/')
 
-### reading file paths from temporary file
+### reading file paths from temporary file.
 with open(file_path, "r") as file:
     image_paths = file.readlines()
 image_paths = [path.strip() for path in image_paths]
