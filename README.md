@@ -15,7 +15,7 @@ CSMA is an ImageJ plugin for the analysis of wound healing (scratch) assays. CSM
 ## Installation
 1.	Install [ImageJ software](https://imagej.net/downloads).
 2.	Install [Anaconda package](https://docs.anaconda.com/free/anaconda/install/index.html). **Please check ‘Add to system PATH’ option during installation.**
-3.	Run the CSMAenv_installer to create a virtual environment with all the necessary libraries. This prevents library version incompatibility and protects other projects should they have different library versions.
+3.	Run the CSMAenv_installer to create a virtual environment with all the necessary libraries. Alternatively you can create the environment from .yml file provided in resources to this project. This prevents library version incompatibility and protects other projects should they have different library versions.
 4.	From the target folder, download CSMA_WoundHealingTool-0.1.0.jar file.
 5.	In the Plugins menu of ImageJ, select Install.
 6.	Navigate to the folder with your jar file and select it. CSMA Wound Healing Tool should appear in the menu.
