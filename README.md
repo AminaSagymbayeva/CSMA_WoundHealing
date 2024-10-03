@@ -41,21 +41,6 @@ If there are holes inside the detected cells try to increase the cell filling ra
 ## Contributing
 All interested parties are welcome to contribute to this project. The code was developed in both Python 3 and Java programming languages. Python 3 is used for image processing and user interface (UI) development, whereas Java facilitates communication between ImageJ and Python. The algorithm was integrated as an ImageJ plugin to facilitate its spread among users accustomed to ImageJ.
 
-### Detailed Breakdown
-
-1. **How to Contribute**:
-   - **Fork the Repository**: Click on the "Fork" button at the top right of the repository page to create your own copy of the repository. 
-   - **Clone Your Fork**: lone your forked repository to your local machine. ```sh git clone https://github.com/your-username/your-repo-name.git
-   - **Create a Branch**: `git checkout -b feature-name`.
-   - **Make Your Changes**.
-   - **Commit Your Changes**: 
-git add .
-git commit -m "Description of your changes"
-
-
-   - **Push to Your Fork**: `git push origin feature-name`.
-   - **Open a Pull Request**.
-
 2. **Reporting Issues**:
 If you encounter any issues or have questions, feel free to open an issue. We would appreciate if you provide as many details as possible to address the issue effectively.
 
