@@ -1,4 +1,4 @@
-# CSMA: an ImageJ Plugin for the Analysis of Wound Healing Assays
+# CSMA: A Standalone and ImageJ-Compatible Tool for Enhanced Wound Healing Assay Analysis
 
 ## Project Description
 CSMA is an ImageJ plugin for the analysis of wound healing (scratch) assays. CSMA performs wound edge detection on a stack of consecutive images and calculates the area or the average width of the wound. It improves on the existing scratch assay analysis tools by accurately detecting migrating cells in the middle of the wound, providing a user-friendly interface, reducing image analysis time, and allowing the adjustment of multiple parameters to suit various imaging conditions. CSMA produces a .csv file with the wound area or width for every image, a graph of wound closure VS time, and images with detected wound area.
@@ -8,17 +8,19 @@ CSMA is an ImageJ plugin for the analysis of wound healing (scratch) assays. CSM
 - [Installation](#installation)
 - [Usage](#usage)
 - [Fine-tuning](#fine-tuning)
-- [Contributing](#contributing)
 - [License](#license)
 
 
 ## Installation
 1.	Install [ImageJ software](https://imagej.net/downloads).
 2.	Install [Anaconda package](https://docs.anaconda.com/free/anaconda/install/index.html). **Please check ‘Add to system PATH’ option during installation.**
-3.	Run the CSMAenv_installer to create a virtual environment with all the necessary libraries. Alternatively you can create the environment from .yml file provided in resources to this project. This prevents library version incompatibility and protects other projects should they have different library versions.
-4.	From the target folder, download CSMA_WoundHealingTool-0.1.0.jar file.
-5.	In the Plugins menu of ImageJ, select Install.
-6.	Navigate to the folder with your jar file and select it. CSMA Wound Healing Tool should appear in the menu.
+3.	You can create ImageJCSMA virtual environment from .yml file provided in resources to this project. This prevents library version incompatibility and protects other projects should they have different library versions.
+  3.1. Download environment.yml file from resources folder
+  3.2. From your terminal, navigate to the directory containing environment.yml
+  3.3. From the terminal, run 'conda env create -f environment.yml' and ensure that the environment is created correctly.
+5.	From the target folder, download CSMA_WoundHealingTool-0.1.0.jar file.
+6.	In the Plugins menu of ImageJ, select Install.
+7.	Navigate to the folder with your jar file and select it. CSMA Wound Healing Tool should appear in the menu.
 
 
 ## Usage
@@ -37,11 +39,7 @@ If there are holes inside the detected cells try to increase the cell filling ra
 4. ***Accounting for a slight field of view shift***: because the algorithm works by overlaying a mask from the previous image to the current image, slight shifts in the fields of view might result in the overestimation of one side of the wound boundary. To minimize the overestimation, try to increase the mask erosion rad and iterations values. Increasing the mask erosion parameter values often requires increasing the edge dilation rad simultaneously. Note that significant shifts in the field of view cannot be fixed in this way. 
 5. ***Threshold***: to differentiate between true wound boundary and noise, we set a threshold value that represents the share of the top largest individual edges that will be detected as wound edges. The smaller this threshold, the less individual edges will be selected. 
 
-
-## Contributing
-All interested parties are welcome to contribute to this project. The code was developed in both Python 3 and Java programming languages. Python 3 is used for image processing and user interface (UI) development, whereas Java facilitates communication between ImageJ and Python. The algorithm was integrated as an ImageJ plugin to facilitate its spread among users accustomed to ImageJ.
-
-2. **Reporting Issues**:
+**Reporting Issues**:
 If you encounter any issues or have questions, feel free to open an issue. We would appreciate if you provide as many details as possible to address the issue effectively.
 
 
