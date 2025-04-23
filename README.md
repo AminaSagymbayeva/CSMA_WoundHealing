@@ -12,15 +12,28 @@ CSMA is an ImageJ plugin for the analysis of wound healing (scratch) assays. CSM
 
 
 ## Installation
+For Windows Users:
 1.	Install [ImageJ software](https://imagej.net/downloads).
 2.	Install [Anaconda package](https://docs.anaconda.com/free/anaconda/install/index.html). **Please check ‘Add to system PATH’ option during installation.**
 3.	You can create ImageJCSMA virtual environment from .yml file provided in resources to this project. This prevents library version incompatibility and protects other projects should they have different library versions.
-  3.1. Download environment.yml file from resources folder
+  3.1. Download environment.yml file from resources folder.
   3.2. From your terminal, navigate to the directory containing environment.yml
   3.3. From the terminal, run 'conda env create -f environment.yml' and ensure that the environment is created correctly.
 5.	From the target folder, download CSMA_WoundHealingTool-0.1.0.jar file.
 6.	In the Plugins menu of ImageJ, select Install.
 7.	Navigate to the folder with your jar file and select it. CSMA Wound Healing Tool should appear in the menu.
+
+For macOS/Linux Users:
+Currently, the ImageJ-compatible plugin is not available for macOS/Linux users. Still, you may access the entire capabilities of CSMA directly through the code.
+1.	Install [ImageJ software](https://imagej.net/downloads).
+2.	Install [Anaconda package](https://docs.anaconda.com/free/anaconda/install/index.html). **Please check ‘Add to system PATH’ option during installation.**
+3.	You can create ImageJCSMA virtual environment from .yml file provided in resources to this project. This prevents library version incompatibility and protects other projects should they have different library versions.
+  3.1. Download environment.yml file from resources folder.
+  3.2. From your terminal, navigate to the directory containing environment.yml
+  3.3. From the terminal, run 'conda env create -f environment.yml' and ensure that the environment is created correctly.
+4. Download image_processing_macOS_Linux script from the resources of this project.
+5. Paste the path to the images directory to the indicated line of code (be careful with the type of dashes you use).
+6. Run the code with the appropriate interpreter (it should be associated with the ImageJCSMA environment).
 
 
 ## Usage
