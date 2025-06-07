@@ -3,6 +3,8 @@
 ## Project Description
 CSMA is an ImageJ plugin for the analysis of wound healing (scratch) assays. CSMA performs wound edge detection on a stack of consecutive images and calculates the area or the average width of the wound. It improves on the existing scratch assay analysis tools by accurately detecting migrating cells in the middle of the wound, providing a user-friendly interface, reducing image analysis time, and allowing the adjustment of multiple parameters to suit various imaging conditions. CSMA produces a .csv file with the wound area or width for every image, a graph of wound closure VS time, and images with detected wound area.
 
+**For citation please refer to DOI: 10.1109/ACCESS.2025.3561607**
+
 
 ## Table of Contents
 - [Installation](#installation)
