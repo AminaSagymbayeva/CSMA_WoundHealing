@@ -10,6 +10,7 @@ CSMA is an ImageJ plugin for the analysis of wound healing (scratch) assays. CSM
 - [Installation](#installation)
 - [Usage](#usage)
 - [Fine-tuning](#fine-tuning)
+- [Batch processing](#batch-processing)
 - [License](#license)
 
 
@@ -41,7 +42,7 @@ Currently, the ImageJ-compatible plugin is not available for macOS/Linux users. 
 ## Usage
 1.	Prepare your dataset. **Ensure that the files are named in proper order (if your image is named ‘image2’, rename it to ‘image02’) and have the same format and dimensions.** Save all images to a single directory. Please try to select quality images as it will make the detection much easier.
 2.	To open the image stack, select File>>Import>>Image Sequence and choose your dataset directory.
-3.	When the image stack is loaded, select Canny Scratch Analysis from the Plugins menu.
+3.	When the image stack is loaded, select CSMA Wound Healing Tool from the Plugins menu. **IMPORTANT**: if the pop-ip windown does not appear after the plugin was selected, [clean temporary files](https://windowsforum.com/threads/how-to-clean-temporary-files-in-windows-10-and-11-5-safe-built-in-methods.389597/) on your local device and restart it.
 4.	Adjust parameters accordingly. We recommend using the default parameter values on the first try. In case you want to improve the quality of wound detection, the instructions for fine-tuning the parameters might be a useful guide.
 5.	Navigate to the directory with the original images; there you should find the processed images, a line graph, and a .csv file.
 
@@ -53,6 +54,45 @@ Currently, the ImageJ-compatible plugin is not available for macOS/Linux users. 
 If there are holes inside the detected cells try to increase the cell filling radius. 
 4. ***Accounting for a slight field of view shift***: because the algorithm works by overlaying a mask from the previous image to the current image, slight shifts in the fields of view might result in the overestimation of one side of the wound boundary. To minimize the overestimation, try to increase the mask erosion rad and iterations values. Increasing the mask erosion parameter values often requires increasing the edge dilation rad simultaneously. Note that significant shifts in the field of view cannot be fixed in this way. 
 5. ***Threshold***: to differentiate between true wound boundary and noise, we set a threshold value that represents the share of the top largest individual edges that will be detected as wound edges. The smaller this threshold, the less individual edges will be selected. 
+
+
+## Batch Processing
+Multiple image stacks can be analyzed automatically, eliminating the need for the user to re-enter parameters for every condition separately. Note that it means that all image stacks will be analyzed with the same default or user-defined conditions. To apply this algorithm follow the instructions below:
+1. ***Download Python script and organize image files***
+- Download image_processing_multistack_v2.py file containing the required Python script from <span style="color: #00bfff;">src/main/resources</span> to your local device.
+- Create the directory structure according to the example below:
+  
+<pre>
+experiment/  (mother directory)
+│
+├── image_processing_multistack_v2.py  (place the Python script directly inside the mother directory)
+│
+├── control/      (directory with the corresponding image stack/sequence of image files)
+│
+├── condition1/   (directory with the corresponding image stack/sequence of image files)
+│
+├── condition2/   (directory with the corresponding image stack/sequence of image files)
+│
+└── ...
+</pre>
+
+**Note**: Avoid storing any irrelevant files and folders in the mother directory. Subdirectories will be analyzed in alphabetical order.
+
+2. ***Run the Python script***
+- For Windows OS users, from your terminal, activate the pre-installed ImageJCSMA virtual environment (see [Installation](#installation) for detailed instructions) by typing:
+   **conda activate ImageJCSMA**.
+   Your 'base' interpreter should change to 'ImageJCSMA'.
+- Navigate to your mother directory using cd command and copying and pasting the corresponding location path. For example:
+   ***cd C:\Users\...\experiment***
+- Run the python script by typing:
+   **python image_processing_multistack_v2.py**
+   OR
+   **py image_processing_multistack_v2.py**
+For MacOS users, please use analogous terminal commands to access and run the Python code.
+3. ***Perform batch processing***
+  
+In the pop-up window with preloaded first image from one of the subdirectories, select suitable parameters as described in [Usage](#usage) and [Fine-tuning](#fine-tuning). After hitting 'apply' for the second time, choose 'batch'. Please allow some time for processing. Upon the successful completion, you should see a corresponding message appear. Your analyzed files can be found in corresponding subdirectories.
+
 
 **Reporting Issues**:
 If you encounter any issues or have questions, feel free to open an issue. We would appreciate if you provide as many details as possible to address the issue effectively.
